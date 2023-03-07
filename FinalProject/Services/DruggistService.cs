@@ -142,7 +142,7 @@ namespace FinalProject.Services
                     goto AgeInput;
                 }
 
-                ExperienceInput: ConsoleHelper.WriteWithColor("Enter your experience in years (Note that experience in age of younger than 18 does not count): ", ConsoleColor.Blue);
+                ExperienceInput: ConsoleHelper.WriteWithColor("Enter your experience in years (Note that experience in age of younger than 18 does not count and experience cannot be more than age -_-): ", ConsoleColor.Blue);
                 byte experience;
                 isSucceeded = byte.TryParse(Console.ReadLine(), out experience);
                 if (!isSucceeded)
