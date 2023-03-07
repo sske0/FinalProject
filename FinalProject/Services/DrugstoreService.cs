@@ -299,7 +299,7 @@ namespace FinalProject.Services
                 else
                 {
                     drug.Count -= count;
-                    ConsoleHelper.WriteWithColor($"""Success! {count} "{drug.Name}"s were purchased, {drug.Count} left.""", ConsoleColor.Green);
+                    ConsoleHelper.WriteWithColor($"""Success! {count} "{drug.Name}"s were purchased, total price: {drug.Price * count}, {drug.Count} left.""", ConsoleColor.Green);
                 }
 
             }
